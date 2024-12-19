@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+ 
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{\fontsize{18}{20}\selectfont Dhruv Gupta}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{https://mail.google.com/mail/u/0/#inbox}{b21008@students.iitmandi.ac.in}}
+  \phone{+91 9646463838}
+  \location{Chandigarh}
+  \linkedin{\href{https://www.linkedin.com/in/dhruv-gupta-956279228/}{linkedin.com/in/dhruv-gupta-956279228}}
+   \github{\href{https://github.com/dhruvik3610}{github.com/dhruvik3610}}
+}
+
+\begin{fullwidth}
+\makecvheader
+
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection{\fontsize{14}{16}\selectfont Education}
+
+%\divider
+\cvevent{\fontsize{11}{13}\selectfont \bf B. Tech. BioEngineering, Minor in Intelligent Systems | Indian Institute of Technology, Mandi}{}{ Nov 2021 -- Present (Till June 2025)}{}
+\begin{itemize}
+\item Relevant Courses - Data Science- 1,2,3 (Python,Probability \&
+Machine Learning), Data Handling and Visualization, Deep Learning and its Applications, Biostatistics, Linear Algebra, Bioinformatics, Signals and Systems
+\item CGPA: {\bf 7.93} (upto sixth semester)
+\end{itemize}
+
+%\divider
+
+\cvsection{\fontsize{14}{16}\selectfont TECHNICAL SKILLS}
+\begin{itemize}
+
+\item {\bf Languages: }[Python, SQL, MySQL](Most experience), [R, HTML-CSS](Intermediate level Experience), [C++, Perl](Beginner Level  experience)
+\item {\bf Frameworks and Relevant Libraries: }Tensorflow, Keras, ScikitLearn, Pandas, Numpy, Matplotlib
+\item {\bf IDEs and Programming Tools: } Spyder, Visual Studio Code, Jupyter Notebook, Google Colab
+\item {\bf MOOCs:} SQL for data analysis
+\end{itemize}
+
+\cvsection{\fontsize{14}{16}\selectfont Experience}
+
+\cvevent{\fontsize{11}{13}\selectfont \bf Data Science Intern | Brainwave Science, Boston, USA}{}{ \fontsize{8}{10}\selectfont March 2024 -- May 2024}{}
+%\begin{tabular}{rl}
+%\textbf{Duration:} & January 2024 - June 2024 (6 months) \\
+%\textbf{Location:} & Remote [Boston, ]
+%\end{tabular}
+
+\begin{itemize}
+%\item Collaborated with cross-functional teams to develop and implement innovative solutions for clients, leveraging expertise in [specific skills or areas of expertise].
+\item Developed and implemented data analysis pipelines using MNE-Python for processing and analyzing EEG/MEG data to enhance the functioning of brainwave detecting headset, {\bf iCognative}.
+\item Conducted preprocessing tasks including filtering, artifact correction, and epoching using {\bf regression} and {\bf independent component analysis} to prepare EEG/MEG data for advanced analysis.
+\item Skills - {\bf Machine Learning}, {\bf MNE Python}, {\bf Data Analysis}
+\end{itemize}
+
+\cvsection{\fontsize{14}{16}\selectfont ProjectS}
+\cvproject{VineNet - Real-Time Grape Bunch Segmentation[\href{https://github.com/dhruvik3610/VineNet---Grape-Bunch-Segmentation}{Github Link}] \hfill  \textnormal{(Machine Learning Project)}} 
+\begin{itemize}
+ \item Developed an optimized U-Net model for precise semantic segmentation of grape bunches in high-resolution vineyard images, achieving a Training IoU of 0.96 and Validation IoU of 0.71.
+ \item Conducted extensive training over 250 epochs on a high-resolution, labeled dataset, specifically curated to enhance model precision in vineyard applications.
+\end{itemize}
+\smallskip
+\smallskip
+%\smallskip
+%\cvproject{AI for Agriculture: Grape Bunch Segmentation Expert[\href{https://drive.google.com/file/d/1BrCJO5i4h4SJmLRL3lleFWggeXDFA_Fb/view?usp=sharing}{Report Link}]  (Python, OpenCV)\hfill \textnormal{(Computer Vision)} }
+%\begin{itemize}
+ %\item Designed and implemented a real-time driver drowsiness detection system using computer vision and machine learning (Support Vector Machine, Histogram of Oriented Gradients, etc.).  
+ %\item Leveraging facial landmarks and eye aspect ratio (EAR) to monitor and alert for signs of driver fatigue, enhancing road safety.
+%\end{itemize}
+%\smallskip
+
+%\smallskip
+
+
+\cvproject{Resume Parser[\href{https://github.com/dhruvik3610/Resume-Parser-and-Matcher}{Github Link}]  (Python, NLP, Spacy3, Custom NER)\hfill \textnormal{(Machine Learning Project)} }
+\begin{itemize}
+ \item Developed and implemented an efficient resume parser using natural language processing (NLP) techniques to extract key information optimizing
+the recruitment process.
+ \item Utilized machine learning algorithms to give score to an input resume by extracting particular keywords from that resume and comparing them with the keywords with an accuracy of 87\%.
+\end{itemize}
+
+\cvsection{\fontsize{14}{16}\selectfont Awards \& Achievements}
+
+\begin{itemize}
+
+
+\item Won {\bf 2nd prize} in {\bf AI Innovation} hackathon conducted by Yahama in collaboration with IIT Mandi.
+\item {\bf Completed SQL 50 Challenge on LeetCode}: Demonstrated advanced SQL proficiency by solving 50 SQL-focused problems on LeetCode.
+\item {\href{https://github.com/dhruvik3610/JPMC_certificate}{JPMC Virtual Internship} } - Participated in JPMorgan Chase Co. Virtual Internship Program, gaining practical experience in the financial industry and utilized various algorithms in Python, React, Typescript and Git. Also used JPMC's tool - "Perspective", to visualise data on web applications.
+
+\end{itemize}
+
+
+\cvsection{\fontsize{14}{16}\selectfont Positions of Responsibility}
+
+\begin{itemize}
+
+\item {\bf UnderGraduate Academic Council}- Branch Councillor for BioEngineering branch at UGAC, IIT Mandi.
+\item {\bf Event Coordinator, Exodia}- Successfully coordinated Quiz event in Exodia, The Annual Cultural Fest of IIT Mandi.
+\item {\bf Quriosity}- Core Team Member at Quriosity, The Quizzing club of IIT Mandi.
+\item {\bf Session organizer, UGAC} - Conducted a guidance session for junior students, providing insights and advice to support their academic and career development.
+
+\end{itemize}
+
+
+
+
+
+
+
+\end{fullwidth}
+\end{document}
